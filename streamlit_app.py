@@ -18,6 +18,6 @@ info_dict = {'x':x, 'y':y, 'operator':operator}
 
 # it returns a True if the button was clicked on the last run of the app, and False otherwise.
 if st.button('Calculate'):
-    result = requests.post(url='http://192.168.35.230:8000/calculator', data=json.dumps(info_dict), verify=False)
+    result = requests.post(url='http://127.0.0.1:8000/calculator', data=json.dumps(info_dict), verify=False)
     
     st.subheader(f"result: {result.text}")
