@@ -5,7 +5,7 @@ def run_streamlit():
     subprocess.run(['streamlit', 'run', 'streamlit_app.py'])
 
 def run_fastapi():
-    subprocess.run(['uvicorn', 'api:app', '--reload', '--host=192.168.35.230'])
+    subprocess.run(['uvicorn', 'api:app', '--reload', '--host=127.0.0.1'])
 
 
 if __name__=="__main__":
